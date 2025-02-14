@@ -1,3 +1,5 @@
+using ApiProjeKampi.WebApi.Context;
+
 namespace ApiProjeKampi.WebApi
 {
     public class Program
@@ -7,6 +9,7 @@ namespace ApiProjeKampi.WebApi
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddDbContext<ApiContext>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
