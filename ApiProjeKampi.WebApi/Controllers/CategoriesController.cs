@@ -52,7 +52,7 @@ namespace ApiProjeKampi.WebApi.Controllers
         {
             _context.Categories.Update(category);
             _context.SaveChanges();
-            return Ok("Kategroi Güncelleme İşlemi Başarılı");
+            return Ok("Kategori Güncelleme İşlemi Başarılı");
         }
     }
 }
